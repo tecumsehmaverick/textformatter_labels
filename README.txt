@@ -4,7 +4,9 @@ Textformatter Labels
 Version: 1.0
 Author: Michael Eichelsdoerfer
 Build Date: 2009-05-30
-Requirements: Symphony 2.0.2
+Requirements: Symphony 2.0.2 or greater
+
+Compatibilty: Tested on Symphony 2.0.3 (2009-06-24)
 
 This is an extension to the Symphony XSLT Content Management System. It will 
 enhance edit pages in the publish area by appending configurable 'textformatter 
