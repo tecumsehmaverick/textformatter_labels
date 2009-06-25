@@ -1,7 +1,7 @@
 Textformatter Labels
 -------------------------------------------------------------------------------
 
-Version: 1.0
+Version: 1.0.1
 Author: Michael Eichelsdoerfer
 Build Date: 2009-05-30
 Requirements: Symphony 2.0.2 or greater
@@ -34,6 +34,9 @@ labels' to existing (HTML) labels of textformatter-enabled textareas.
 
 
 [CHANGES]
+
+1.0.1
+- fixed a small bug to prevent errors in Symphony's logfile (Symphony 2.0.3)
 
 1.0
 - Initial release
