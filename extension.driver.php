@@ -43,7 +43,7 @@
 			);
 		}
 
-		public function getFormatters($context){
+		public function getFormatters(){
 			$TFM = new TextformatterManager($this->_Parent);
 			return $TFM->listAll();			
 		}
