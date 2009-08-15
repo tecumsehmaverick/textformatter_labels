@@ -13,7 +13,8 @@
 					'name'    => 'Michael Eichelsdoerfer',
 					'website' => 'http://www.michael-eichelsdoerfer.de',
 					'email'   => 'info@michael-eichelsdoerfer.de'
-				)
+				),
+				'description'	=> 'Configurable labels for textarea inputs, showing the active textformatter. Labels may be linked to documentation pages on the web.'
 			);
 		}
 
