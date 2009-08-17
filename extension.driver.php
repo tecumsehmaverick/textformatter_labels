@@ -46,7 +46,7 @@
 
 		public function getFormatters(){
 			$TFM = new TextformatterManager($this->_Parent);
-			return $TFM->listAll();			
+			return $TFM->listAll();
 		}
 
 	/*-------------------------------------------------------------------------
@@ -64,7 +64,7 @@
 				$page->addStylesheetToHead(URL . '/extensions/textformatter_labels/assets/tfl.css', 'screen', 80);
 			}
 		}
-		
+
 		public function appendPreferences($context){
 
 			$formatters = $this->getFormatters();
