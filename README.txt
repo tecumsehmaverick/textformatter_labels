@@ -6,7 +6,7 @@ Author: Michael Eichelsdoerfer
 Build Date: 2009-05-30
 Requirements: Symphony 2.0.2 or greater
 
-Compatibilty: Tested on Symphony 2.0.3 (2009-06-24)
+Compatibilty: Tested on Symphony 2.0.3 to 2.0.6
 
 This is an extension to the Symphony XSLT Content Management System. It will 
 enhance edit pages in the publish area by appending configurable 'textformatter 
