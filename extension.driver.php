@@ -53,7 +53,7 @@
 		Delegates:
 	-------------------------------------------------------------------------*/
 
-		public function uninstall($context){
+		public function uninstall(){
 			$this->_Parent->Configuration->remove('textformatter_labels');
 			$this->_Parent->saveConfig();
 		}
