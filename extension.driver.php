@@ -7,8 +7,8 @@
 		public function about() {
 			return array(
 				'name'         => 'Textformatter Labels',
-				'version'      => '1.0.1',
-				'release-date' => '2009-06-25',
+				'version'      => '1.0.2',
+				'release-date' => '2009-12-30',
 				'author'       => array(
 					'name'    => 'Michael Eichelsdoerfer',
 					'website' => 'http://www.michael-eichelsdoerfer.de',
