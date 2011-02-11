@@ -7,8 +7,8 @@
 		public function about() {
 			return array(
 				'name'         => 'Textformatter Labels',
-				'version'      => '1.0.2',
-				'release-date' => '2009-12-30',
+				'version'      => '1.1',
+				'release-date' => '2011-02-11',
 				'author'       => array(
 					'name'    => 'Michael Eichelsdoerfer',
 					'website' => 'http://www.michael-eichelsdoerfer.de',
@@ -45,7 +45,7 @@
 		}
 
 		public function getFormatters(){
-			$TFM = new TextformatterManager($this->_Parent);
+			$TFM = new TextformatterManager(Administration::instance());
 			return $TFM->listAll();
 		}
 
@@ -54,14 +54,14 @@
 	-------------------------------------------------------------------------*/
 
 		public function uninstall(){
-			$this->_Parent->Configuration->remove('textformatter_labels');
-			$this->_Parent->saveConfig();
+			Symphony::Configuration()->remove('textformatter_labels');
+			Administration::instance()->saveConfig();
 		}
 
 		public function appendStylesheet($context) {
-			$page = $context['parent']->Page;
+			$page = Administration::instance()->Page;
 			if ($page instanceof ContentPublish and $page->_context['page'] == 'edit') {
-				$page->addStylesheetToHead(URL . '/extensions/textformatter_labels/assets/tfl.css', 'screen', 80);
+				$page->addStylesheetToHead(URL . '/extensions/textformatter_labels/assets/textformatter_labels.css', 'screen', 80);
 			}
 		}
 
@@ -80,11 +80,11 @@
 					$group->setAttribute('class', 'group');
 
 					$label = Widget::Label($about['name'] . ': Label Text (optional override)');
-					$label->appendChild(Widget::Input('settings[textformatter_labels]['.$handle.'_text]', General::Sanitize($context['parent']->Configuration->get($handle.'_text', 'textformatter_labels'))));
+					$label->appendChild(Widget::Input('settings[textformatter_labels]['.$handle.'_text]', General::Sanitize(Symphony::Configuration()->get($handle.'_text', 'textformatter_labels'))));
 					$group->appendChild($label);
 
 					$label = Widget::Label($about['name'] . ': Link URL (optional)');
-					$label->appendChild(Widget::Input('settings[textformatter_labels]['.$handle.'_url]', General::Sanitize($context['parent']->Configuration->get($handle.'_url', 'textformatter_labels'))));
+					$label->appendChild(Widget::Input('settings[textformatter_labels]['.$handle.'_url]', General::Sanitize(Symphony::Configuration()->get($handle.'_url', 'textformatter_labels'))));
 					$group->appendChild($label);
 
 					$setttings->appendChild($group);
@@ -98,7 +98,7 @@
 		public function modifyLabel($context){
 
 			// get configuration
-			$config = $this->_Parent->Configuration->get();
+			$config = Symphony::Configuration()->get();
 
 			// get formatter handle
 			if(!$handle = $context['field']->get('formatter')) return;
