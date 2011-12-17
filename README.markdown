@@ -1,20 +1,12 @@
-Textformatter Labels
-------------------------------------------------------------------------------
-
-Version: 1.1
-Author: Michael Eichelsdoerfer
-Build Date: 2011-02-11
-Requirements: Symphony 2.0.2 or greater
+# Textformatter Labels
 
 This is an extension to the Symphony XSLT Content Management System. It will
 enhance edit pages in the publish area by appending configurable
 'textformatter labels' to existing (HTML) labels of textformatter-enabled
 textareas.
 
-Extension home: http://symphony-cms.com/download/extensions/view/22388/
 
-
-[INSTALLATION]
+## Installation
 
 1. Upload the 'textformatter_labels' folder in this archive to your Symphony 
    'extensions' folder.
@@ -23,7 +15,7 @@ Extension home: http://symphony-cms.com/download/extensions/view/22388/
    with-selected menu, then click Apply.
 
 
-[USAGE]
+## Usage
 
 1. Once you have installed the extension, it will automatically append 
    textformatter names to (HTML) labels of textformatter-enabled textareas on 
