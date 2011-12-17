@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="textformatter_labels" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Textformatter Labels</name>
+	<description>Configurable labels for textarea inputs, showing the active textformatter. Labels may be linked to documentation pages on the web.</description>
+	<repo type="github">https://github.com/michael-e/textformatter_labels</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/22264/</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="michael-e" symphony="michael-e">Michael Eichelsdoerfer</name>
+			<website>http://www.michael-eichelsdoerfer.de</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2" date="2011-12-17" min="2.0.6" max="2.2.x">
+			<![CDATA[- Added extension.meta.xml file]]>
+		</release>
+		<release version="1.1" date="2011-02-11" min="2.0.6" max="2.2.x">
+			<![CDATA[- Symphony 2.2 compatibility]]>
+		</release>
+		<release version="1.0.2" date="2009-12-30" min="2.0.6" max="2.1.x">
+			<![CDATA[- Bugfixes, cleanup]]>
+		</release>
+		<release version="1.0.1" date="2009-06-25" min="2.0.6" max="2.1.x">
+			<![CDATA[- Bugfixes, README update]]>
+		</release>
+		<release version="1.0" date="2009-06-01" min="2.0.6" max="2.1.x">
+			<![CDATA[- Initial commit]]>
+		</release>
+	</releases>
+</extension>
